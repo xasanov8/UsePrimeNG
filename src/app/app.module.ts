@@ -13,6 +13,11 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { TableModule } from 'primeng/table';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { ButtonModule } from 'primeng/button';
+
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -30,7 +35,11 @@ import { TableModule } from 'primeng/table';
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    TableModule
+    TableModule,
+    InputTextModule,
+    InputNumberModule,
+    ButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

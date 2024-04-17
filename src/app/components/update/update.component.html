@@ -1,1 +1,24 @@
-<p>update works!</p>
+<div class="card flex justify-content-center">
+
+    <div class="flex flex-column gap-2" style="width: 25%;margin: 0 auto;margin-top: 50px;">
+        <p-inputNumber [style]="{'width': '100%'}" inputId="integeronly" [(ngModel)]="myId" aria-placeholder="enter Id"></p-inputNumber>
+        <button pButton pRipple label="Find User" class="p-button-success" (click)="getById()"></button>
+    </div>
+
+    <div class="flex flex-column gap-2" style="width: 20%;margin: 0 auto;margin-top: 50px;">
+        <label for="name">Name</label>
+        <input pInputText id="name" aria-describedby="name-help"  style="width: 100%;" value="{{user.name}}" name="name" [(ngModel)]="user.name"/>
+        <small id="name-help">Enter your name</small>
+    </div>
+
+    <div class="flex flex-column gap-2" style="width: 20%;margin: 0 auto;margin-top: 20px;">
+        <label for="age">Age</label><br>
+        <p-inputNumber [style]="{'width': '100%'}" inputId="integeronly" [(ngModel)]="user.age"></p-inputNumber>
+    </div>
+
+    <div class="flex flex-column gap-2" style="width: 20%;margin: 0 auto;margin-top: 20px;">
+        <button pButton pRipple label="Updata User" class="p-button-subit" (click)="setUser()"></button>
+    </div>
+
+</div>
+
