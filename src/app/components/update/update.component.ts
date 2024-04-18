@@ -48,7 +48,6 @@ export class UpdateComponent implements OnInit{
         console.log(err);
       }
     })
-
   }
 
   setUser(){
@@ -63,5 +62,4 @@ export class UpdateComponent implements OnInit{
       }
     })
   }
-
 }

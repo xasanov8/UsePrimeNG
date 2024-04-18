@@ -2,7 +2,7 @@
 
     <div class="flex flex-column gap-2" style="width: 25%;margin: 0 auto;margin-top: 50px;">
         <p-inputNumber [style]="{'width': '100%'}" inputId="integeronly" [(ngModel)]="myId" aria-placeholder="enter Id"></p-inputNumber>
-        <button pButton pRipple label="Submit" class="p-button-success" (click)="getById()"></button>
+        <button pButton pRipple label="Find User" class="p-button-success" (click)="getById()"></button>
     </div>
 
     @if(user.name){ 
